@@ -1,18 +1,101 @@
-# 🔍 Uptime Kuma - Sistema de Monitoramento
+# 🔍 Uptime Kuma - Seu primeiro projeto de monitoramento na nuvem
 
-Projeto de monitoramento de serviços usando Uptime Kuma com Docker.
+## 👶 Para quem é este guia?
+Este tutorial foi feito para **iniciante em Cloud Computing** que quer subir sua **primeira aplicação na nuvem**.  
+Você não precisa ter experiência com AWS, Oracle ou Docker — o guia mostra **passo a passo com prints**.
 
-## 📋 Sobre o projeto
+Ao final, você terá:
+- Uma instância (máquina virtual) rodando na nuvem (AWS ou Oracle).
+- O **Uptime Kuma** instalado em container Docker.
+- Monitoramento básico de sites, APIs e serviços, com alertas no **Telegram**.
 
-Uptime Kuma é uma ferramenta self-hosted de monitoramento de uptime, similar ao Uptime Robot. Este projeto configura o Uptime Kuma para monitorar serviços locais e externos, como o FileBrowser.
-
-## ✨ Funcionalidades
-
-- ✅ Monitoramento HTTP/HTTPS
-- 📊 Dashboard visual com gráficos
-- 🔔 Alertas em múltiplos canais (Telegram, Discord, e-mail, etc)
-- 📱 Interface responsiva
+## 📋 O que é o Uptime Kuma?
+O **Uptime Kuma** é uma ferramenta self-hosted de monitoramento de uptime, parecida com o Uptime Robot.  
+Com ele você pode:
+- ✅ Monitorar sites, APIs e serviços
+- 📊 Ver um painel visual com gráficos
+- 🔔 Receber alertas em tempo real (Telegram, Discord, e-mail, etc.)
 - 🐳 Deploy fácil com Docker
+
+## 🗂️ Etapas do projeto
+
+- **Fase 1:** Criar conta em um provedor de nuvem   
+- **Fase 2:** Criar uma instância Linux na nuvem  
+- **Fase 3:** Fazer o deploy do Uptime Kuma com Docker  
+- **Fase 4:** Configurar alertas e monitoramento
+
+Neste tutorial, usaremos a AWS.
+
+## ☁️ Fase 1 - Criando sua conta na nuvem
+
+- Acesse o link: [https://aws.amazon.com/free](https://aws.amazon.com/free).  
+- Clique no botão **"Criar uma conta gratuita"**.  
+- Em **Root user email address**, insira um **e-mail válido**.  
+- Em **AWS account name**, insira o nome da conta. Pode ser seu nome, sua empresa ou um apelido (ex: `meu-projeto-cloud`).  
+- Clique em **Verify email address**. A AWS enviará um código de verificação para seu e-mail.  
+- Verifique sua caixa de entrada e cole o código.  
+- Clique em **Verify**.  
+- Em **Root user password**, digite uma senha forte.  
+  💡 Dica: misture letras maiúsculas, minúsculas, números e símbolos.  
+- ⚠️ Observações importantes:
+  - Esta senha será usada para **entrar na AWS** como usuário root.  
+  - Guarde a senha em um local seguro, pois é o acesso principal da sua conta.  
+- Após preencher os campos, clique em **Continue**.  
+
+---
+
+### Escolhendo o plano
+
+- Selecione a opção **Gratuito**:  
+  - Benefícios iniciais por até **6 meses**.  
+  - Créditos de até **USD $200** para testar e experimentar serviços.  
+  - Inclui serviços selecionados que podem ser usados sem custo, como instâncias `t2.micro`.  
+
+---
+
+### Informações sobre uso da conta
+
+- No campo **Como você planeja usar a AWS?**, escolha a opção **Pessoal**.  
+- Preencha os campos com seus **dados pessoais** (nome, telefone, endereço, etc.).  
+- Marque a caixa: **Li e concordo com os termos do Contrato de Cliente da AWS**.  
+- Clique em **Concordar e continuar (etapa 2 de 5)**.  
+
+---
+
+### Informações de faturamento (etapa 3 de 5)
+
+- A AWS pede dados de pagamento para **verificação e prevenção de fraudes**, mesmo para o plano gratuito.  
+- A AWS retém temporariamente **USD $1** (ou equivalente) para verificar o cartão.  
+  ⚠️ Certifique-se de que seu cartão permite compras internacionais.  
+- Não haverá cobrança para o plano gratuito, a menos que você faça upgrade para um plano pago.  
+- Preencha todos os campos obrigatórios sobre faturamento e clique em **Verificar e continuar**.  
+
+---
+
+### Verificação de telefone (etapa 4 de 5)
+
+- A AWS pedirá para **confirmar seu número de telefone**.  
+- Você receberá um **código via SMS ou chamada de voz**.  
+- Digite o código na tela para concluir a verificação.  
+⚠️ Sem essa verificação, sua conta não será ativada.  
+
+---
+
+### Escolha do plano de suporte (etapa 5 de 5)
+
+- A AWS oferece planos pagos de suporte, mas para iniciantes escolha **Basic (grátis)**.  
+- O plano gratuito permite criar instâncias e usar serviços sem custo extra, perfeito para aprendizado.  
+
+---
+
+### Confirmação e login
+
+- Após concluir a verificação de telefone e escolher o plano de suporte, sua conta será ativada.  
+- Você poderá entrar na **AWS Management Console** usando o **e-mail** e a **senha** que criou. 🎉
+
+
+
+
 
 ## 🚀 Instalação
 
