@@ -1,4 +1,22 @@
 # 🔍 Uptime Kuma - Seu primeiro projeto de monitoramento na nuvem
+[![Docker Ready](https://img.shields.io/badge/docker-ready-blue?logo=docker)](https://www.docker.com/)
+[![Beginner Friendly](https://img.shields.io/badge/beginner-friendly-brightgreen)](https://github.com/JoaoLuizDev/kuma)
+[![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg)](LICENSE)
+
+
+## 📚 Índice
+- [👶 Para quem é este guia?](#-para-quem-é-este-guia)
+- [📋 O que é o Uptime Kuma?](#-o-que-é-o-uptime-kuma)
+- [🗂️ Etapas do projeto](#-etapas-do-projeto)
+- [☁️ Fase 1 - Criando sua conta na nuvem](#️-fase-1---criando-sua-conta-na-nuvem)
+- [🚀 Fase 2 - Instalação](#-fase-2---instalação)
+- [📊 Fase 3 - Configuração de monitores](#-fase-3---configuração-de-monitores)
+- [🔔 Fase 4 - Configuração de alertas no Telegram](#-fase-4---configuração-de-alertas-no-telegram)
+- [🛠️ Comandos úteis](#-comandos-úteis)
+- [📁 Estrutura do projeto](#-estrutura-do-projeto)
+- [🔒 Segurança](#-segurança)
+- [📈 Monitoramento Recomendado](#-monitoramento-recomendado)
+- [🐛 Troubleshooting](#-troubleshooting)
 
 ## 👶 Para quem é este guia?
 Este tutorial foi feito para **iniciante em Cloud Computing** que quer subir sua **primeira aplicação na nuvem**.  
@@ -20,9 +38,9 @@ Com ele você pode:
 ## 🗂️ Etapas do projeto
 
 - **Fase 1:** Criar conta em um provedor de nuvem   
-- **Fase 2:** Criar uma instância Linux na nuvem  
-- **Fase 3:** Fazer o deploy do Uptime Kuma com Docker  
-- **Fase 4:** Configurar alertas e monitoramento
+- **Fase 2:** Instalação e configuração  
+- **Fase 3:** Configuração de monitores 
+- **Fase 4:** Configuração de alertas no Telegram
 
 Neste tutorial, usaremos a AWS.
 
@@ -94,10 +112,7 @@ Neste tutorial, usaremos a AWS.
 - Você poderá entrar na **AWS Management Console** usando o **e-mail** e a **senha** que criou. 🎉
 
 
-
-
-
-## 🚀 Instalação
+## 🚀 Fase 2 - Instalação
 
 ### Pré-requisitos
 
@@ -137,7 +152,7 @@ Para rodar este projeto na instância em nuvem, siga os passos:
 
 6. **Configure sua conta** na primeira vez que acessar
 
-## 📊 Configuração de monitores
+## 📊 Fase 3 - Configuração de monitores
 
 ### Exemplo: Monitorar um serviço HTTP
 
@@ -149,7 +164,7 @@ Para rodar este projeto na instância em nuvem, siga os passos:
    - **Heartbeat interval:** 60 segundos
 3. Clique em "Save"
 
-## 🔔 Configuração de alertas no Telegram
+## 🔔 Fase 4 - Configuração de alertas no Telegram
 
 ### Passo 1: Criar o bot
 
