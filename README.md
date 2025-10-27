@@ -164,6 +164,8 @@ Para rodar este projeto na instância em nuvem, siga os passos:
    - **Heartbeat interval:** 60 segundos
 3. Clique em "Save"
 
+<img src="https://github.com/JoaoLuizDev/kuma/blob/main/screenshots/monitor.png" alt="Exemplo do Uptime Kuma" width="1000"/>
+
 ## 🔔 Fase 4 - Configuração de alertas no Telegram
 
 ### Passo 1: Criar o bot
